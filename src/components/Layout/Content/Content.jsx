@@ -23,7 +23,7 @@ function Content() {
         </div>
         <div className="search">
           <Input/>
-          <Button buttonText={data[0].buttonText}/>
+          <Button onClick={ () => { console.log('search'); } } buttonText={data[0].buttonText}/>
         </div>
       </div>
     </div>

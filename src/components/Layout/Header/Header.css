@@ -1,7 +1,10 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: calc(1440px / 2);
   background-color: #121829CC;
   padding: 16px 120px;
+  max-width: 1440px;
+  margin: 0 auto;
 }

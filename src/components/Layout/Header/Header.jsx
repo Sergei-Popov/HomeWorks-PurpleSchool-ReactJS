@@ -5,7 +5,7 @@ function Header() {
 
   return (
     <header className='header'>
-      <img src="../../../../public/logo.svg" alt="" srcset="" />
+      <img src="../../../../public/logo.svg" alt=""/>
       <MenuList/>
     </header>
   );

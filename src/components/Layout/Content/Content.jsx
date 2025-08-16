@@ -3,6 +3,7 @@ import ParagraphMain from '../../UI/ParagraphMain/ParagraphMain';
 import Button from '../../UI/Button/Button';
 import './Content.css';
 import Input from '../../UI/Input/Input';
+import CardList from '../../UI/CardList/CardList';
 
 function Content() {
 
@@ -26,6 +27,7 @@ function Content() {
           <Button onClick={ () => { console.log('search'); } } buttonText={data[0].buttonText}/>
         </div>
       </div>
+      <CardList/>
     </div>
   );
   

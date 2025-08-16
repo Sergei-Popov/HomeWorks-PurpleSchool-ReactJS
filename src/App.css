@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(18, 24, 41, 1);
+  display: block;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}

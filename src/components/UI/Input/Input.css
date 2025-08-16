@@ -1,0 +1,28 @@
+.search_form {
+  position: relative;
+  width: 100%;
+}
+
+.search_form img{
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 16px;
+  top: 12px;
+}
+
+.search_form .input {
+  padding: 16px 16px 16px 56px;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid rgba(50, 59, 84, 1);
+  border-radius: 12px;
+  color: #fff;
+}
+
+.search_form .input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgba(71, 80, 105, 1);
+}

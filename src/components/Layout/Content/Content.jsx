@@ -1,9 +1,10 @@
 import HeaderText from '../../UI/HeaderText/HeaderText';
 import ParagraphMain from '../../UI/ParagraphMain/ParagraphMain';
 import Button from '../../UI/Button/Button';
-import './Content.css';
+import styles from './Content.module.css';
 import Input from '../../UI/Input/Input';
 import CardList from '../../UI/CardList/CardList';
+import cn from 'classnames';
 
 function Content() {
 
@@ -16,18 +17,23 @@ function Content() {
   ];
 
   return (
-    <div className="main">
-      <div className="search_block">
-        <div className="search_block-text">
-          <HeaderText headerText={ data[0].headerText }/>
-          <ParagraphMain paragraphMain={data[0].paragraphMain}/>
+    <div className={cn(styles.main)}>
+      <div className={cn(styles.search_block)}>
+        <div className={cn(styles.search_blockText)}>
+          <HeaderText headerText={data[0].headerText} />
+          <ParagraphMain paragraphMain={data[0].paragraphMain} />
         </div>
-        <div className="search">
-          <Input/>
-          <Button onClick={ () => { console.log('search'); } } buttonText={data[0].buttonText}/>
+        <div className={cn(styles.search)}>
+          <Input />
+          <Button
+            onClick={() => {
+              console.log('search');
+            }}
+            buttonText={data[0].buttonText}
+          />
         </div>
       </div>
-      <CardList/>
+      <CardList />
     </div>
   );
   

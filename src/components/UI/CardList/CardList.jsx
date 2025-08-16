@@ -1,5 +1,6 @@
 import CardItem from '../CardItem/CardItem';
-import './CardList.css';
+import styles from './CardList.module.css';
+import cn from 'classnames';
 
 function CardList() {
 
@@ -35,7 +36,7 @@ function CardList() {
   ];
 
   return (
-    <div className="cards">
+    <div className={cn(styles.cards)}>
       {initialCard.map(el => 
         <CardItem key={el.id} imagePath={el.imagePath} title={el.title} buttonText={el.buttonText} likes={el.likes}/>,
       )}

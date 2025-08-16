@@ -34,7 +34,7 @@
   padding: 8px;
 }
 
-.card_like {
+.card__like {
   display: flex;
   align-items: center;
   gap: 8px;

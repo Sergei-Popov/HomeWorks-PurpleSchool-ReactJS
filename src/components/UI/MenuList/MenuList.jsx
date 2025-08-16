@@ -1,4 +1,5 @@
-import './MenuList.css';
+import styles from './MenuList.module.css';
+import cn from 'classnames';
 
 function MenuList() {
 
@@ -9,11 +10,11 @@ function MenuList() {
   ];
 
   return (
-    <div className="navigation">
-      <ul className="navigation__list">
+    <div className={cn(styles.navigation)}>
+      <ul className={cn(styles.navigation__list)}>
         {menuData.map(( el, index ) => {
-          return <li key={index} className="navigation__list-item">
-            <a href="#" className="navigation__list-link">
+          return <li key={index} className={cn(styles.navigation__list_item)}>
+            <a href="#" className={cn(styles.navigation__list_link)}>
               { el }
             </a>
           </li>;

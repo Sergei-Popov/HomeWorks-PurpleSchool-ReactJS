@@ -4,13 +4,13 @@
   gap: 16px;
 }
 
-.navigation__list-item {
+.navigation__list_item {
   list-style: none;
   padding: 12px 16px;
   cursor: pointer;
 }
 
-.navigation__list-link {
+.navigation__list_link {
   color: #FFFFFF;
   text-decoration: none;
   font-weight: 600;
